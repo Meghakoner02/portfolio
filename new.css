@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: all .2s linear;
+}
+
+body{
+    
+    
+    overflow: hidden;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#f1f4f9,#dff1ff);
+
+}
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+section .color:nth-child(1)
+{
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: #c23561;
+}
+section .color:nth-child(2)
+{
+    bottom: -150px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background: #fffd87;
+}
+section .color:nth-child(3)
+{
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    background: #00d2ff;
+}
+.box{
+    position: relative;
+}
+.container1{
+    position: relative;
+    width: 600px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.form{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+}
+.Contact-form form{
+    position: relative;
+
+
+}
+.Contact-form form input,
+form textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 18px;
+    background: #12141c;
+    color: var(--second-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05) ;
+
+}
+.Contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.Contact-text{
+    color: #c23561;
+}
+.Contact-text h2{
+    font-size: 75px;
+    text-align: left;
+    text-shadow: 2px 2px 20px #00d2ff ;
+}
+    
+
+.Contact-text h4{
+    font-size: 40px;
+    color: #c23561;
+}
+.Contact-text p{
+    font-size: 25px;
+}
+.Contact-list{
+    margin-bottom: 3rem;
+    color: rgb(250, 246, 246);
+}
+.Contact-list li{
+    margin-bottom: 10px;
+    display: block;
+    color: whitesmoke;
+
+}
+.Contact-list li a{
+    display: block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+.Contact-list li a:hover{
+    transform: scale(1.2);
+    color: #c23561;
+}
+.Contact-icons i{
+    height: 40px;
+    width: 40px;
+    background: blur;
+    border-radius: 0.5rem;
+    color: #c23561;
+    display: inline-flex;
+    align-items: center;
+    font-size: 38px;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all .40s ease;
+    margin-bottom: 10px;
+}
+.Contact-icons i:hover{
+    transform: scale(1.2);
+    color: azure;
+    background: #c23561;
+}
+
+
+.Contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+.Contact-form form .send{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 500;
+
+    
+    width: 50%;
+    transition:all .40s ease ;
+    cursor: pointer;
+    margin-bottom: 5rem;
+     
+}
+.Contact-form form .send:hover{
+    transform: scale(1.05);
+    color: black;
+    background: #c23561;
+    
+    
+}
+.form h2::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #fff;
+    
+}
+.form .inputbox{
+    width: 100%;
+    margin-top: 20px;
+}
+.form .inputbox input
+{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05) ;
+
+}
+
+
